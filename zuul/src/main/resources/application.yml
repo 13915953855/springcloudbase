@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: zuul-gateway
+zuul:
+  semaphore:
+    max-semaphores: 5000
+  routes:
+    file:
+      path: /file/*
+      serviceId: file
+    user:
+      path: /user/*
+      serviceId: user
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9527/eureka,http://localhost:9528/eureka
