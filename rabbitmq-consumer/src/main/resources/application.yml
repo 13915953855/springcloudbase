@@ -1,0 +1,19 @@
+server:
+  port: 8022
+spring:
+  #给项目来个名字
+  application:
+    name: rabbitmq-consumer
+  #配置rabbitMq 服务器
+  rabbitmq:
+    host: 172.16.3.17
+    port: 5672
+    username: root
+    password: Zywlw2018
+#  cloud:
+#    stream:
+#      bindings:
+#        springCloudBusInput:
+#          group: gme-gateway13213145
+#          destination: 090f8f123993b0283483e072589ada2c
+#          contentType: application/json
